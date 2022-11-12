@@ -79,12 +79,12 @@ plt.show()
 
 ## 막대
 ``` 
-plt.bar/barh(                   # 수직/수평
-    (리스트)변수1, (리스트)변수2    
-    , width/height = 너비/높이    # 너비
-    , color = color              # 색깔
-    , linewidth = 두께           # 테두리 두께
-    , edgecolor = '색깔'         # 테두리 색깔
+plt.bar(                          # 수직(수평: barh)
+    (리스트)변수1, (리스트)변수2    # x축, y축
+    , width/height = 너비/높이     # 너비
+    , color = color               # 색깔
+    , linewidth = 두께            # 테두리 두께
+    , edgecolor = '색깔'          # 테두리 색깔
     )
 
 plt.show()
