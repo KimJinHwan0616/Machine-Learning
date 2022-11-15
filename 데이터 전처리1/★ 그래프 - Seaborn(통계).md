@@ -1,20 +1,17 @@
-# Seaborn
-Matplotlib 업그레이드(색상)
+># Seaborn
+>Matplotlib 업그레이드(색상)
+>### 막대그래프,
 ```angular2html
 import seaborn as sns
-
-(리스트)변수1 = [값1, ..., 값n]
-(리스트)변수2 = [값1, ..., 값n]
 ```
 
 ## 막대그래프
-항목별 갯수
 ```
-sns.countplot(
-    data=(테이블)변수
-    x/y = '속성'          # x/y축 - 세로/가로
-    hue = '속성'          # 범례
-    [, palette='종류']    # 팔레트 종류
+sns.barplot(
+    data = (테이블)변수    # 테이블 이름
+    , x = '속성'      # x축
+    , y = '속성'      # y축
+    , hue = '속성'    # 그룹별 속성
     )
 
 plt.show()
