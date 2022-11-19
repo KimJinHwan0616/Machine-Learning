@@ -3,6 +3,21 @@
 ``` 
 데이터 전처리 → 모델 생성＆훈련 → 모델 성능 조절 → 모델 평가＆데이터 예측
 ```
+## 데이터 정보
+```angular2html
+# 전체
+테이블_변수.head()
+테이블_변수.info()
+테이블_변수.describe()
+
+# 속성별
+테이블_변수.value_count()
+
+# 상관관계
+corr_matrix = 테이블_변수.corr()    
+corr_matrix['속성'].sort_values(ascending = False)    # 상관계수(속성＆나머지)
+```
+
 ## 데이터 전처리1
 ```
 결측치
